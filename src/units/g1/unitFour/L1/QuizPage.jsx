@@ -86,120 +86,121 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            {/* Q1 */}
-            <div className="Q1">
-              <span>
-                How did David and Milo stay good friends even with their
-                differences?
-              </span>
-              <ul>
-                <li>
-                  <p> They worked together.</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "0")}
-                </li>
-                <li>
-                  <p> They argued with each other.</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "1")}
-                </li>
-                <li>
-                  <p> They ignored each other.</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "2")}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              {/* Q1 */}
+              <div className="Q1">
+                <span>
+                  How did David and Milo stay good friends even with their
+                  differences?
+                </span>
+                <ul>
+                  <li>
+                    <p> They worked together.</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "0")}
+                  </li>
+                  <li>
+                    <p> They argued with each other.</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "1")}
+                  </li>
+                  <li>
+                    <p> They ignored each other.</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q2 */}
-            <div className="Q2">
-              <span>What was the problem between David and Milo?</span>
-              <ul>
-                <li>
-                  <p> They couldn’t decide which game to play first.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "0")}
-                </li>
-                <li>
-                  <p> They played rock, paper, scissors.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "1")}
-                </li>
-                <li>
-                  <p>They yelled at each other.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "2")}
-                </li>
-              </ul>
-            </div>
+              {/* Q2 */}
+              <div className="Q2">
+                <span>What was the problem between David and Milo?</span>
+                <ul>
+                  <li>
+                    <p> They couldn’t decide which game to play first.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "0")}
+                  </li>
+                  <li>
+                    <p> They played rock, paper, scissors.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "1")}
+                  </li>
+                  <li>
+                    <p>They yelled at each other.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q3 */}
-            <div className="Q3">
-              <span>How did David and Milo solve their problem?</span>
-              <ul>
-                <li>
-                  <p> They played rock, paper, scissors.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "0")}
-                </li>
-                <li>
-                  <p> They did not play any games.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "1")}
-                </li>
-                <li>
-                  <p> They went and told their parents.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "2")}
-                </li>
-              </ul>
+              {/* Q3 */}
+              <div className="Q3">
+                <span>How did David and Milo solve their problem?</span>
+                <ul>
+                  <li>
+                    <p> They played rock, paper, scissors.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "0")}
+                  </li>
+                  <li>
+                    <p> They did not play any games.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "1")}
+                  </li>
+                  <li>
+                    <p> They went and told their parents.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "2")}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             {/* Buttons */}
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>

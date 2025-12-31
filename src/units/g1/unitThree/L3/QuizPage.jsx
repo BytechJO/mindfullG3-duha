@@ -85,118 +85,119 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content quizfix">
-            <div className="Q1">
-              <span>What did Brian ask Mr Percy?</span>
-              <ul>
-                <li>
-                  <p> ‘Would you like a piece of cake?’</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "0")}
-                </li>
-                <li>
-                  <p> ‘Are we too noisy?’</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "1")}
-                </li>
-                <li>
-                  <p>‘How are you today?’</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q1", "2")}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              <div className="Q1">
+                <span>What did Brian ask Mr Percy?</span>
+                <ul>
+                  <li>
+                    <p> ‘Would you like a piece of cake?’</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "0")}
+                  </li>
+                  <li>
+                    <p> ‘Are we too noisy?’</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "1")}
+                  </li>
+                  <li>
+                    <p>‘How are you today?’</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q1", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q2">
-              <span>Why did Brian ask Mr Percy about the noise?</span>
-              <ul>
-                <li>
-                  <p> He didn’t want to be too loud.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "0")}
-                </li>
-                <li>
-                  <p> He wanted to know if Mr Percy wanted cake.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "1")}
-                </li>
-                <li>
-                  <p> He wanted to show Mr Percy his yellow belt.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q2", "2")}
-                </li>
-              </ul>
-            </div>
+              <div className="Q2">
+                <span>Why did Brian ask Mr Percy about the noise?</span>
+                <ul>
+                  <li>
+                    <p> He didn’t want to be too loud.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "0")}
+                  </li>
+                  <li>
+                    <p> He wanted to know if Mr Percy wanted cake.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "1")}
+                  </li>
+                  <li>
+                    <p> He wanted to show Mr Percy his yellow belt.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q2", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q3">
-              <span>What did Brian say to his cousin Leo?</span>
-              <ul>
-                <li>
-                  <p>
-                    {" "}
-                    “We should always think about the <br /> people around us
-                    and their feelings.”
-                  </p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="0"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "0")}
-                </li>
-                <li>
-                  <p> “Congratulations!”</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="1"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "1")}
-                </li>
-                <li>
-                  <p> “Are we too noisy?”</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="2"
-                    onChange={handleChange}
-                  />
-                  {renderAnswerGif("q3", "2")}
-                </li>
-              </ul>
+              <div className="Q3">
+                <span>What did Brian say to his cousin Leo?</span>
+                <ul>
+                  <li>
+                    <p>
+                      {" "}
+                      “We should always think about the <br /> people around us
+                      and their feelings.”
+                    </p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="0"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "0")}
+                  </li>
+                  <li>
+                    <p> “Congratulations!”</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="1"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "1")}
+                  </li>
+                  <li>
+                    <p> “Are we too noisy?”</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="2"
+                      onChange={handleChange}
+                    />
+                    {renderAnswerGif("q3", "2")}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             <div className="quiz-buttons">
               <button
                 type="button"

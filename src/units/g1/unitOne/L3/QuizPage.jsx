@@ -85,126 +85,127 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="Q1">
-              <span>What made Kylie almost reach her boiling point?</span>
-              <ul>
-                <li>
-                  <p> Her classmates pushed her against the bookshelf. </p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "0")}
-                </li>
-                <li>
-                  <p>Someone bumped into her.</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "1")}
-                </li>
-                <li>
-                  <p>Two girls walked into the line in front of her.</p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "2")}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              <div className="Q1">
+                <span>What made Kylie almost reach her boiling point?</span>
+                <ul>
+                  <li>
+                    <p> Her classmates pushed her against the bookshelf. </p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "0")}
+                  </li>
+                  <li>
+                    <p>Someone bumped into her.</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "1")}
+                  </li>
+                  <li>
+                    <p>Two girls walked into the line in front of her.</p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q2">
-              <span>
-                What colour was the anger thermometer after <br /> someone told
-                Kylie to hurry up?
-              </span>
-              <ul>
-                <li>
-                  <p> Red</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "0")}
-                </li>
-                <li>
-                  <p> Yellow</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "1")}
-                </li>
-                <li>
-                  <p> Blue</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "2")}
-                </li>
-              </ul>
-            </div>
+              <div className="Q2">
+                <span>
+                  What colour was the anger thermometer after <br /> someone told
+                  Kylie to hurry up?
+                </span>
+                <ul>
+                  <li>
+                    <p> Red</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "0")}
+                  </li>
+                  <li>
+                    <p> Yellow</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "1")}
+                  </li>
+                  <li>
+                    <p> Blue</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q3">
-              <span>What did Kylie do to calm down?</span>
-              <ul>
-                <li>
-                  <p> She took a few breaths.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "0")}
-                </li>
-                <li>
-                  <p> She screamed.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "1")}
-                </li>
-                <li>
-                  <p> She pushed the two girls.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "2")}
-                </li>
-              </ul>
+              <div className="Q3">
+                <span>What did Kylie do to calm down?</span>
+                <ul>
+                  <li>
+                    <p> She took a few breaths.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "0")}
+                  </li>
+                  <li>
+                    <p> She screamed.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "1")}
+                  </li>
+                  <li>
+                    <p> She pushed the two girls.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "2")}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>
                 Submit

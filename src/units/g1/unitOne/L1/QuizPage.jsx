@@ -69,7 +69,7 @@ export const QuizPage = () => {
     if (results[question] === null) return null;
     if (answers[question] !== optionValue) return null;
     return results[question] ? <img src={Timg} alt="correct" className="answer-gif" />
-                              : <img src={Fimg} alt="wrong" className="answer-gif" />;
+      : <img src={Fimg} alt="wrong" className="answer-gif" />;
   };
 
   return (
@@ -79,72 +79,74 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            {/* السؤال 1 */}
-            <div className="Q1">
-              <span>Why did Adam take Rob’s salt?</span>
-              <ul>
-                <li>
-                 <p>He didn’t have enough salt for the project</p> 
-                  <input type="radio" name="q1" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q1', '0')}
-                </li>
-                <li>
-                 <p> He needed it for lunch.</p>
-                  <input type="radio" name="q1" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q1', '1')}
-                </li>
-                <li>
-                 <p> He wanted to take it home.</p>
-                  <input type="radio" name="q1" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q1', '2')}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              {/* السؤال 1 */}
+              <div className="Q1">
+                <span>Why did Adam take Rob’s salt?</span>
+                <ul>
+                  <li>
+                    <p>He didn’t have enough salt for the project</p>
+                    <input type="radio" name="q1" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q1', '0')}
+                  </li>
+                  <li>
+                    <p> He needed it for lunch.</p>
+                    <input type="radio" name="q1" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q1', '1')}
+                  </li>
+                  <li>
+                    <p> He wanted to take it home.</p>
+                    <input type="radio" name="q1" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q1', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* السؤال 2 */}
-            <div className="Q2">
-              <span>What happened when Adam took Rob’s salt?</span>
-              <ul>
-                <li>
-                 <p> Rob didn’t have enough for his project.</p>
-                  <input type="radio" name="q2" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q2', '0')}
-                </li>
-                <li>
-                 <p> The teacher became angry.</p>
-                  <input type="radio" name="q2" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q2', '1')}
-                </li>
-                <li>
-                 <p> Adam made too much modelling dough.</p>
-                  <input type="radio" name="q2" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q2', '2')}
-                </li>
-              </ul>
-            </div>
+              {/* السؤال 2 */}
+              <div className="Q2">
+                <span>What happened when Adam took Rob’s salt?</span>
+                <ul>
+                  <li>
+                    <p> Rob didn’t have enough for his project.</p>
+                    <input type="radio" name="q2" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q2', '0')}
+                  </li>
+                  <li>
+                    <p> The teacher became angry.</p>
+                    <input type="radio" name="q2" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q2', '1')}
+                  </li>
+                  <li>
+                    <p> Adam made too much modelling dough.</p>
+                    <input type="radio" name="q2" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q2', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* السؤال 3 */}
-            <div className="Q3">
-              <span>What was Adam’s idea?</span>
-              <ul>
-                <li>
-                 <p> To ask the cook for some salt.</p>
-                  <input type="radio" name="q3" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q3', '0')}
-                </li>
-                <li>
-                 <p> To take some salt from another classmate</p>
-                  <input type="radio" name="q3" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q3', '1')}
-                </li>
-                <li>
-                 <p> To ask the teacher for some salt.</p>
-                  <input type="radio" name="q3" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q3', '2')}
-                </li>
-              </ul>
+              {/* السؤال 3 */}
+              <div className="Q3">
+                <span>What was Adam’s idea?</span>
+                <ul>
+                  <li>
+                    <p> To ask the cook for some salt.</p>
+                    <input type="radio" name="q3" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q3', '0')}
+                  </li>
+                  <li>
+                    <p> To take some salt from another classmate</p>
+                    <input type="radio" name="q3" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q3', '1')}
+                  </li>
+                  <li>
+                    <p> To ask the teacher for some salt.</p>
+                    <input type="radio" name="q3" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q3', '2')}
+                  </li>
+                </ul>
+              </div>
             </div>
-
+            
             {/* أزرار التحكم */}
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>Submit</button>

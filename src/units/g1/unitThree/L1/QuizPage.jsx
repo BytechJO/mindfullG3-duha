@@ -69,7 +69,7 @@ export const QuizPage = () => {
     if (results[question] === null) return null;
     if (answers[question] !== optionValue) return null;
     return results[question] ? <img src={Timg} alt="correct" className="answer-gif" />
-                              : <img src={Fimg} alt="wrong" className="answer-gif" />;
+      : <img src={Fimg} alt="wrong" className="answer-gif" />;
   };
 
   return (
@@ -79,71 +79,72 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content quizfix">
-            <div className="Q1">
-              <span>How did Liz and Ryan help their parents?</span>
-              <ul>
-                <li>
-                 <p> They asked them what to do.</p>
-                  <input type="radio" name="q1" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q1', '0')}
-                </li>
-                <li>
-                 <p> They wrote a list of chores and did them.</p>
-                  <input type="radio" name="q1" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q1', '1')}
-                </li>
-                <li>
-                 <p> They cooked the food.</p>
-                  <input type="radio" name="q1" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q1', '2')}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              <div className="Q1">
+                <span>How did Liz and Ryan help their parents?</span>
+                <ul>
+                  <li>
+                    <p> They asked them what to do.</p>
+                    <input type="radio" name="q1" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q1', '0')}
+                  </li>
+                  <li>
+                    <p> They wrote a list of chores and did them.</p>
+                    <input type="radio" name="q1" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q1', '1')}
+                  </li>
+                  <li>
+                    <p> They cooked the food.</p>
+                    <input type="radio" name="q1" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q1', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q2">
-              <span>At the beginning of the story Liz and Ryan were watching TV <br />while Mum and Dad cooked.</span>
-              <br />
-              <span>Liz didn’t think that was _________.</span>
-              <ul>
-                <li>
-                 <p> Caring</p>
-                  <input type="radio" name="q2" value="0" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '0')}
-                </li>
-                <li>
-                 <p> Nice</p>
-                  <input type="radio" name="q2" value="1" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '1')}
-                </li>
-                <li>
-                 <p> Fair</p>
-                  <input type="radio" name="q2" value="2" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '2')}
-                </li>
-              </ul>
-            </div>
+              <div className="Q2">
+                <span>At the beginning of the story Liz and Ryan were watching TV <br />while Mum and Dad cooked.</span>
+                <br />
+                <span>Liz didn’t think that was _________.</span>
+                <ul>
+                  <li>
+                    <p> Caring</p>
+                    <input type="radio" name="q2" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q2', '0')}
+                  </li>
+                  <li>
+                    <p> Nice</p>
+                    <input type="radio" name="q2" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q2', '1')}
+                  </li>
+                  <li>
+                    <p> Fair</p>
+                    <input type="radio" name="q2" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q2', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q3" >
-              <span>How did Mum and Dad feel at the end of the story?</span>
-              <ul>
-                <li>
-                 <p> Tired</p>
-                  <input type="radio" name="q3" value="0" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '0')}
-                </li>
-                <li>
-                 <p> Relaxed</p>
-                  <input type="radio" name="q3" value="1" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '1')}
-                </li>
-                <li>
-                 <p> Angry</p>
-                  <input type="radio" name="q3" value="2" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '2')}
-                </li>
-              </ul>
+              <div className="Q3" >
+                <span>How did Mum and Dad feel at the end of the story?</span>
+                <ul>
+                  <li>
+                    <p> Tired</p>
+                    <input type="radio" name="q3" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q3', '0')}
+                  </li>
+                  <li>
+                    <p> Relaxed</p>
+                    <input type="radio" name="q3" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q3', '1')}
+                  </li>
+                  <li>
+                    <p> Angry</p>
+                    <input type="radio" name="q3" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q3', '2')}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             <div className="quiz-buttons">
               <button type="button" className='fixquizbtn' id="submitBtn" onClick={handleSubmit}>Submit</button>
               {showSkip && <button type="button" className="skip-btn" onClick={handleSkip}>Skip</button>}

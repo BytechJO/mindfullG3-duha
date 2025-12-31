@@ -764,3 +764,48 @@ body {
     flex-wrap: wrap;
   }
 } */
+
+
+.Q1 ul,
+.Q2 ul,
+.Q3 ul {
+  list-style: decimal;
+  counter-reset: answer;
+}
+
+.Q1 li,
+.Q2 li,
+.Q3 li
+  {
+  counter-increment: answer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Q1 li::before,
+.Q2 li::before,
+.Q3 li::before
+  {
+  content: counter(answer, lower-alpha) ".";
+  color: #e2a02d;
+  margin-right: 8px;
+}
+
+.questions {
+  counter-reset: question 0; 
+}
+
+.questions > div > span {
+  counter-increment: question; 
+  font-weight: bold;
+}
+
+.questions > div > span::before {
+  content: counter(question) ". ";
+  margin-right: 6px;
+  background: #e2a02d;
+  border-radius: 60%;
+  color: #fff;
+  padding: 2px 2px 3px 6px; 
+}

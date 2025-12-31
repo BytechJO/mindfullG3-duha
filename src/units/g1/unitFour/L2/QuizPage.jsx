@@ -69,7 +69,7 @@ export const QuizPage = () => {
     if (results[question] === null) return null;
     if (answers[question] !== optionValue) return null;
     return results[question] ? <img src={Timg} alt="correct" className="answer-gif" />
-                              : <img src={Fimg} alt="wrong" className="answer-gif" />;
+      : <img src={Fimg} alt="wrong" className="answer-gif" />;
   };
 
   return (
@@ -79,72 +79,73 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            {/* Q1 */}
-            <div className="Q1">
-              <span>Why did Rose need the teacher’s help?</span>
-              <ul>
-                <li>
-                 <p></p> To help Peter from being bullied.
-                  <input type="radio" name="q1" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q1', '0')}
-                </li>
-                <li>
-                 <p>To help her with spelling on the test.</p> 
-                  <input type="radio" name="q1" value="1" onChange={handleChange}/>
-                  {renderAnswerGif('q1', '1')}
-                </li>
-                <li>
-                 <p>To help Peter with his spelling test.</p> 
-                  <input type="radio" name="q1" value="2" onChange={handleChange}/>
-                  {renderAnswerGif('q1', '2')}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              {/* Q1 */}
+              <div className="Q1">
+                <span>Why did Rose need the teacher’s help?</span>
+                <ul>
+                  <li>
+                    <p></p> To help Peter from being bullied.
+                    <input type="radio" name="q1" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q1', '0')}
+                  </li>
+                  <li>
+                    <p>To help her with spelling on the test.</p>
+                    <input type="radio" name="q1" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q1', '1')}
+                  </li>
+                  <li>
+                    <p>To help Peter with his spelling test.</p>
+                    <input type="radio" name="q1" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q1', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q2 */}
-            <div className="Q2">
-              <span>Why was Rose scared to tell the teacher?</span>
-              <ul>
-                <li>
-                 <p> She was scared of being a telltale.</p>
-                  <input type="radio" name="q2" value="0" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '0')}
-                </li>
-                <li>
-                 <p> She was scared of the spelling test.</p>
-                  <input type="radio" name="q2" value="1" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '1')}
-                </li>
-                <li>
-                 <p> She was scared about not going outside.</p>
-                  <input type="radio" name="q2" value="2" onChange={handleChange}/>
-                  {renderAnswerGif('q2', '2')}
-                </li>
-              </ul>
-            </div>
+              {/* Q2 */}
+              <div className="Q2">
+                <span>Why was Rose scared to tell the teacher?</span>
+                <ul>
+                  <li>
+                    <p> She was scared of being a telltale.</p>
+                    <input type="radio" name="q2" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q2', '0')}
+                  </li>
+                  <li>
+                    <p> She was scared of the spelling test.</p>
+                    <input type="radio" name="q2" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q2', '1')}
+                  </li>
+                  <li>
+                    <p> She was scared about not going outside.</p>
+                    <input type="radio" name="q2" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q2', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q3 */}
-            <div className="Q3">
-              <span>What happened at the end of the story?</span>
-              <ul>
-                <li>
-                <p> Josh and Anya apologised to Peter.</p> 
-                  <input type="radio" name="q3" value="0" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '0')}
-                </li>
-                <li>
-                 <p> Josh and Anya continued to bully Peter.</p>
-                  <input type="radio" name="q3" value="1" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '1')}
-                </li>
-                <li>
-                <p>  Josh and Anya ignored Peter.</p>
-                  <input type="radio" name="q3" value="2" onChange={handleChange}/>
-                  {renderAnswerGif('q3', '2')}
-                </li>
-              </ul>
+              {/* Q3 */}
+              <div className="Q3">
+                <span>What happened at the end of the story?</span>
+                <ul>
+                  <li>
+                    <p> Josh and Anya apologised to Peter.</p>
+                    <input type="radio" name="q3" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q3', '0')}
+                  </li>
+                  <li>
+                    <p> Josh and Anya continued to bully Peter.</p>
+                    <input type="radio" name="q3" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q3', '1')}
+                  </li>
+                  <li>
+                    <p>  Josh and Anya ignored Peter.</p>
+                    <input type="radio" name="q3" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q3', '2')}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             {/* Buttons */}
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>Submit</button>

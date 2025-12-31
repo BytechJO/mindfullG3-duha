@@ -85,126 +85,127 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            {/* السؤال 1 */}
-            <div className="Q1">
-              <span>What were the group of boys talking about?</span>
-              <ul>
-                <li>
-                  <p> Toy cars </p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "0")}
-                </li>
-                <li>
-                  <p> Video games </p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "1")}
-                </li>
-                <li>
-                  <p> Dinner </p>
-                  <input
-                    type="radio"
-                    name="q1"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q1", "2")}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              {/* السؤال 1 */}
+              <div className="Q1">
+                <span>What were the group of boys talking about?</span>
+                <ul>
+                  <li>
+                    <p> Toy cars </p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "0")}
+                  </li>
+                  <li>
+                    <p> Video games </p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "1")}
+                  </li>
+                  <li>
+                    <p> Dinner </p>
+                    <input
+                      type="radio"
+                      name="q1"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q1", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            {/* السؤال 2 */}
-            <div className="Q2">
-              <span>What did Peter do for fun at home?</span>
-              <ul>
-                <li>
-                  <p> Peter put puzzles together </p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "0")}
-                </li>
-                <li>
-                  <p> Peter made toy aeroplanes. </p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "1")}
-                </li>
-                <li>
-                  <p> Peter made toy cars.</p>
-                  <input
-                    type="radio"
-                    name="q2"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q2", "2")}
-                </li>
-              </ul>
-            </div>
+              {/* السؤال 2 */}
+              <div className="Q2">
+                <span>What did Peter do for fun at home?</span>
+                <ul>
+                  <li>
+                    <p> Peter put puzzles together </p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "0")}
+                  </li>
+                  <li>
+                    <p> Peter made toy aeroplanes. </p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "1")}
+                  </li>
+                  <li>
+                    <p> Peter made toy cars.</p>
+                    <input
+                      type="radio"
+                      name="q2"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q2", "2")}
+                  </li>
+                </ul>
+              </div>
 
-            {/* السؤال 3 */}
-            <div className="Q3">
-              <span>How did Jonah become Peter’s friend?</span>
-              <ul>
-                <li>
-                  <p> He talked with the other boys.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="0"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "0")}
-                </li>
-                <li>
-                  <p> He talked with Peter about building toy aeroplanes. </p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="1"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "1")}
-                </li>
-                <li>
-                  <p> He yelled at the other boys.</p>
-                  <input
-                    type="radio"
-                    name="q3"
-                    value="2"
-                    onChange={handleChange}
-                    style={{ marginLeft: "30px" }}
-                  />
-                  {renderAnswerGif("q3", "2")}
-                </li>
-              </ul>
+              {/* السؤال 3 */}
+              <div className="Q3">
+                <span>How did Jonah become Peter’s friend?</span>
+                <ul>
+                  <li>
+                    <p> He talked with the other boys.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="0"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "0")}
+                  </li>
+                  <li>
+                    <p> He talked with Peter about building toy aeroplanes. </p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="1"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "1")}
+                  </li>
+                  <li>
+                    <p> He yelled at the other boys.</p>
+                    <input
+                      type="radio"
+                      name="q3"
+                      value="2"
+                      onChange={handleChange}
+                      style={{ marginLeft: "30px" }}
+                    />
+                    {renderAnswerGif("q3", "2")}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             {/* أزرار التحكم */}
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>

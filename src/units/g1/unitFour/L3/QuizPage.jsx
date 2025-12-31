@@ -78,63 +78,64 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            {/* Q1 */}
-            <div className="Q1">
-              <span>Why did Derrick feel upset?</span>
-              <ul>
-                <li><p>He didn’t win the class president vote.</p>
-                  <input type="radio" name="q1" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q1', '0')}
-                </li>
-                <li><p>Jasmine’s presentation was better than his.</p>
-                  <input type="radio" name="q1" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q1', '1')}
-                </li>
-                <li><p>His poster ripped.</p>
-                  <input type="radio" name="q1" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q1', '2')}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              {/* Q1 */}
+              <div className="Q1">
+                <span>Why did Derrick feel upset?</span>
+                <ul>
+                  <li><p>He didn’t win the class president vote.</p>
+                    <input type="radio" name="q1" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q1', '0')}
+                  </li>
+                  <li><p>Jasmine’s presentation was better than his.</p>
+                    <input type="radio" name="q1" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q1', '1')}
+                  </li>
+                  <li><p>His poster ripped.</p>
+                    <input type="radio" name="q1" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q1', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q2 */}
-            <div className="Q2">
-              <span>Why did Derrick not throw a tantrum?</span>
-              <ul>
-                <li><p>Because his teacher would be angry.</p>
-                  <input type="radio" name="q2" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q2', '0')}
-                </li>
-                <li><p>He did not want to be a sore loser.</p>
-                  <input type="radio" name="q2" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q2', '1')}
-                </li>
-                <li><p>He did not want his friends to see him mad.</p>
-                  <input type="radio" name="q2" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q2', '2')}
-                </li>
-              </ul>
-            </div>
+              {/* Q2 */}
+              <div className="Q2">
+                <span>Why did Derrick not throw a tantrum?</span>
+                <ul>
+                  <li><p>Because his teacher would be angry.</p>
+                    <input type="radio" name="q2" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q2', '0')}
+                  </li>
+                  <li><p>He did not want to be a sore loser.</p>
+                    <input type="radio" name="q2" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q2', '1')}
+                  </li>
+                  <li><p>He did not want his friends to see him mad.</p>
+                    <input type="radio" name="q2" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q2', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            {/* Q3 */}
-            <div className="Q3">
-              <span>How did Derrick show good sportsmanship to Jasmine?</span>
-              <ul>
-                <li><p>He threw a tantrum.</p>
-                  <input type="radio" name="q3" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q3', '0')}
-                </li>
-                <li><p>He congratulated Jasmine.</p>
-                  <input type="radio" name="q3" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q3', '1')}
-                </li>
-                <li><p>He ignored her.</p>
-                  <input type="radio" name="q3" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q3', '2')}
-                </li>
-              </ul>
+              {/* Q3 */}
+              <div className="Q3">
+                <span>How did Derrick show good sportsmanship to Jasmine?</span>
+                <ul>
+                  <li><p>He threw a tantrum.</p>
+                    <input type="radio" name="q3" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q3', '0')}
+                  </li>
+                  <li><p>He congratulated Jasmine.</p>
+                    <input type="radio" name="q3" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q3', '1')}
+                  </li>
+                  <li><p>He ignored her.</p>
+                    <input type="radio" name="q3" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q3', '2')}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             {/* Buttons */}
             {showSkip && (
               <button type="button" className="skip-btn" onClick={handleSkip}>

@@ -92,6 +92,7 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
+            <div className="questions">
             <div className="Q1">
               <span>How did Emma feel about Molly’s hug?</span>
               <ul>
@@ -199,7 +200,7 @@ export const QuizPage = () => {
                 </li>
               </ul>
             </div>
-
+            </div>
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>
                 Submit

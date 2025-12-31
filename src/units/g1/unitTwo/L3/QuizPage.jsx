@@ -69,7 +69,7 @@ export const QuizPage = () => {
     if (results[question] === null) return null;
     if (answers[question] !== optionValue) return null;
     return results[question] ? <img src={Timg} alt="correct" className="answer-gif" />
-                              : <img src={Fimg} alt="wrong" className="answer-gif" />;
+      : <img src={Fimg} alt="wrong" className="answer-gif" />;
   };
 
   return (
@@ -79,69 +79,70 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="Q1">
-              <span>Who gave Jen her pair of roller skates?</span>
-              <ul>
-                <li>
-                 <p> Her aunt and uncle.</p>
-                  <input type="radio" name="q1" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q1', '0')}
-                </li>
-                <li>
-                 <p> Her grandparents.</p>
-                  <input type="radio" name="q1" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q1', '1')}
-                </li>
-                <li>
-                 <p> Her friends.</p>
-                  <input type="radio" name="q1" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q1', '2')}
-                </li>
-              </ul>
-            </div>
+            <div className="questions">
+              <div className="Q1">
+                <span>Who gave Jen her pair of roller skates?</span>
+                <ul>
+                  <li>
+                    <p> Her aunt and uncle.</p>
+                    <input type="radio" name="q1" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q1', '0')}
+                  </li>
+                  <li>
+                    <p> Her grandparents.</p>
+                    <input type="radio" name="q1" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q1', '1')}
+                  </li>
+                  <li>
+                    <p> Her friends.</p>
+                    <input type="radio" name="q1" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q1', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q2">
-              <span>What did Jen do when she kept falling over?</span>
-              <ul>
-                <li>
-                 <p> Sit for a few minutes and then kept trying.</p>
-                  <input type="radio" name="q2" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q2', '0')}
-                </li>
-                <li>
-                 <p> Give up and quit.</p>
-                  <input type="radio" name="q2" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q2', '1')}
-                </li>
-                <li>
-                 <p> Sit and think about what is for dinner.</p>
-                  <input type="radio" name="q2" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q2', '2')}
-                </li>
-              </ul>
-            </div>
+              <div className="Q2">
+                <span>What did Jen do when she kept falling over?</span>
+                <ul>
+                  <li>
+                    <p> Sit for a few minutes and then kept trying.</p>
+                    <input type="radio" name="q2" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q2', '0')}
+                  </li>
+                  <li>
+                    <p> Give up and quit.</p>
+                    <input type="radio" name="q2" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q2', '1')}
+                  </li>
+                  <li>
+                    <p> Sit and think about what is for dinner.</p>
+                    <input type="radio" name="q2" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q2', '2')}
+                  </li>
+                </ul>
+              </div>
 
-            <div className="Q3">
-              <span>What did Jen tell her aunt when she was practising?</span>
-              <ul>
-                <li>
-                 <p> ‘I am ready to try again!’</p>
-                  <input type="radio" name="q3" value="0" onChange={handleChange} />
-                  {renderAnswerGif('q3', '0')}
-                </li>
-                <li>
-                 <p> ‘More lemonade and cake please!’</p>
-                  <input type="radio" name="q3" value="1" onChange={handleChange} />
-                  {renderAnswerGif('q3', '1')}
-                </li>
-                <li>
-                 <p> ‘I’m going to keep trying.’</p>
-                  <input type="radio" name="q3" value="2" onChange={handleChange} />
-                  {renderAnswerGif('q3', '2')}
-                </li>
-              </ul>
+              <div className="Q3">
+                <span>What did Jen tell her aunt when she was practising?</span>
+                <ul>
+                  <li>
+                    <p> ‘I am ready to try again!’</p>
+                    <input type="radio" name="q3" value="0" onChange={handleChange} />
+                    {renderAnswerGif('q3', '0')}
+                  </li>
+                  <li>
+                    <p> ‘More lemonade and cake please!’</p>
+                    <input type="radio" name="q3" value="1" onChange={handleChange} />
+                    {renderAnswerGif('q3', '1')}
+                  </li>
+                  <li>
+                    <p> ‘I’m going to keep trying.’</p>
+                    <input type="radio" name="q3" value="2" onChange={handleChange} />
+                    {renderAnswerGif('q3', '2')}
+                  </li>
+                </ul>
+              </div>
             </div>
-
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>Submit</button>
               {showSkip && <button type="button" className="skip-btn" onClick={handleSkip}>Skip</button>}
