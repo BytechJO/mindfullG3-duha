@@ -784,14 +784,17 @@ export const StoryPage = () => {
       videoRef.current.playbackRate = playbackSpeed;
     }
   }, [currentVideo, isPlaying, playbackSpeed]);
+
   const handlePrevious = () => {
     setCurrentVideo(prev => (prev > 0 ? prev - 1 : videos.length - 1));
+    setShowBanner(false);
   };
   const handleNext = () => {
     if (currentVideo === videos.length - 1) {
       navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
     } else {
       setCurrentVideo(prev => prev + 1);
+      setShowBanner(false);
     }
   };
 
@@ -961,7 +964,13 @@ export const StoryPage = () => {
 
           <video
             ref={videoRef}
-            className="w-full aspect-video object-cover"
+            className={`
+    w-full
+    h-full
+    object-cover
+
+    ${isFullscreen ? 'fixed inset-0' : 'aspect-video'}
+  `}
             muted={isMuted}
             onEnded={handleEnded}
             preload="auto"
@@ -983,7 +992,7 @@ export const StoryPage = () => {
           )}
 
           {currentVideo === 2 && showBanner && (
-            <div className="instruction-banner show">
+            <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
               <p style={{ fontSize: '1.6em', textAlign: 'left' }}>
                 Highlight how Adam feels when he takes the salt
               </p>
