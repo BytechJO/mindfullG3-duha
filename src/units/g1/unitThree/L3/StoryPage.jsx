@@ -139,10 +139,17 @@ export const StoryPage = () => {
           start: 17.5,
           end: 20,
           words: [
-            { text: " Are   ", start: 8.0, end: 8.3 },
+            { text: "Are ", start: 8.3, end: 8.6 },
             { text: "we", start: 8.3, end: 8.6 },
             { text: "too", start: 8.6, end: 8.9 },
             { text: "noisy?", start: 8.9, end: 9.2 },
+            { text: "I ", start: 10.6, end: 10.8 },
+            { text: "don’t", start: 10.8, end: 11.0 },
+            { text: "want", start: 11.0, end: 11.2 },
+            { text: "to", start: 11.2, end: 11.4 },
+            { text: "be", start: 11.4, end: 11.6 },
+            { text: "too", start: 11.6, end: 11.8 },
+            { text: "loud.", start: 11.8, end: 12.0 },
           ],
         },
       ],
@@ -636,7 +643,7 @@ export const StoryPage = () => {
     const selectedText = selection.toString().trim();
     if (!selectedText) return;
 
-    const allCorrectWords = ["too", "noisy"];
+    const allCorrectWords = ["are","we","too", "noisy", "i","don’t","want","to","be","too","loud"];
 
     const wordsInSelection = selectedText
       .split(/\s+/)
@@ -777,7 +784,7 @@ export const StoryPage = () => {
   const handleWordClick = (word) => {
     const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
     const allCorrectWords = [
-      "too", "noisy"
+      "are ","we","too", "noisy", "I","don’t","want","to","be","too","loud"
     ];
     if (!allCorrectWords.includes(cleanWord)) {
       setShowWrongFeedback(true);
