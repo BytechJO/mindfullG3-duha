@@ -1,0 +1,766 @@
+body {
+  min-height: 100vh;
+}
+#p3 {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1.563rem 3.125rem -0.75rem rgba(0, 0, 0, 0.25);
+  background-color: #000;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.1);
+  width: 90%;
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  margin-left: 20px;
+  transform: translate(-50%, -50%);
+}
+
+#p3 .content {
+  position: absolute;
+  top: 10px;
+  left: 18.5%;
+  width: 100%;
+  height: 100%;
+  margin-top: clamp(80px, 10vw, 160px);
+  font-size: 16px;
+}
+#p3 li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#p3 li p {
+  width: 100%;
+}
+/* استعلام الوسائط لأجهزة iPad (العرض بين 768 و 1024 بكسل) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    font-size: 18px;
+  }
+
+  .story-pages-container {
+    width: 88%;
+    margin-left: 9%;
+  }
+
+  .Q1,
+  .Q2,
+  .Q3 {
+    margin-left: 80px;
+    margin-bottom: 0rem;
+    font-size: 0.7rem;
+    left: 2%;
+  }
+
+  .Q1 span,
+  .Q2 span,
+  .Q3 span {
+    display: block;
+  }
+
+  .skip-btn,
+  .try-btn {
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+#p3 ul {
+  list-style-type: lower-alpha;
+  position: relative;
+  left: clamp(10%, 15vw, 16%);
+}
+
+#p3 span {
+  color: #4a79bd;
+  position: relative;
+  left: clamp(10%, 12vw, 13%);
+}
+
+#p3 li {
+  position: relative;
+}
+
+#p3 li input[type="radio"] {
+  position: absolute;
+  left: 38%;
+  top: clamp(3px, 0.5vw, 15px);
+  width: clamp(12px, 2vw, 18px);
+  height: clamp(12px, 2vw, 18px);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#p3 li input[type="radio"]:checked {
+  background-color: black;
+}
+
+#p3 .share,
+#p3 .share1 {
+  color: #4a79bd;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: bold;
+  margin: clamp(30px, 5vw, 62px) 0 clamp(5px, 1vw, 5px) 0;
+}
+
+#submitBtn {
+  background-color: #4a79bd;
+  border: none;
+  border-radius: clamp(20px, 5vw, 40px);
+  width: clamp(100px, 20vw, 150px);
+  height: clamp(30px, 5vw, 40px);
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+}
+
+#submitBtn:hover {
+  background-color: #426ca7f2;
+  transform: scale(1.1);
+}
+
+.story-pages-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+/* استعلام الوسائط لأجهزة iPad (العرض بين 768 و 1024 بكسل) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    font-size: 18px;
+  }
+
+  .story-pages-container {
+    width: 88%;
+    margin-left: 9%;
+  }
+
+  .Q1,
+  .Q2,
+  .Q3 {
+    margin-left: 80px;
+    margin-bottom: 0rem;
+    font-size: 0.7rem;
+    left: 2%;
+  }
+
+  .Q1 span,
+  .Q2 span,
+  .Q3 span {
+    display: block;
+  }
+
+  .skip-btn,
+  .try-btn {
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+#p3 ul {
+  list-style-type: lower-alpha;
+  position: relative;
+  left: clamp(10%, 15vw, 16%);
+}
+
+#p3 span {
+  color: #4a79bd;
+  position: relative;
+  left: clamp(10%, 12vw, 13%);
+}
+
+#p3 li {
+  position: relative;
+}
+
+#p3 li input[type="radio"] {
+  position: absolute;
+  left: 38%;
+  top: clamp(3px, 0.5vw, 15px);
+  width: clamp(12px, 2vw, 18px);
+  height: clamp(12px, 2vw, 18px);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#p3 li input[type="radio"]:checked {
+  background-color: black;
+}
+
+#p3 .share,
+#p3 .share1 {
+  color: #4a79bd;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: bold;
+  margin: clamp(30px, 5vw, 62px) 0 clamp(5px, 1vw, 5px) 0;
+}
+
+#submitBtn {
+  background-color: #4a79bd;
+  border: none;
+  border-radius: clamp(20px, 5vw, 40px);
+  width: clamp(100px, 20vw, 150px);
+  height: clamp(30px, 5vw, 40px);
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+}
+
+#submitBtn:hover {
+  background-color: #426ca7f2;
+  transform: scale(1.1);
+}
+
+.story-pages-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  #submitBtn {
+    bottom: 27%;
+  }
+}
+@media (max-width: 1025px) {
+  #p3 .content {
+    left: 10%;
+    top: 37px;
+
+    margin-top: clamp(45px, 1vw, 120px);
+    font-size: 15px;
+  }
+
+  #p3 ul {
+    left: 10%;
+  }
+
+  #p3 span {
+    left: 10%;
+  }
+  #p3 li p {
+    width: 30%;
+  }
+  #p3 li input[type="radio"] {
+    left: 30%;
+    width: clamp(10px, 3vw, 16px);
+    height: clamp(10px, 3vw, 16px);
+  }
+
+  #submitBtn {
+    left: 35%;
+    top: 65%;
+    width: clamp(80px, 25vw, 100px);
+    height: clamp(30px, 6vw, 30px);
+  }
+}
+
+/* للشاشات المتوسطة */
+@media (max-width: 850px) {
+  #p3 {
+    margin-top: 76px;
+  }
+
+  #p3 .content {
+    left: 10%;
+    top: 15px;
+    margin-top: clamp(45px, 7.5vw, 120px);
+    font-size: 12px;
+  }
+  #p3 ul {
+    left: 10%;
+  }
+
+  #p3 span {
+    left: 10%;
+  }
+
+  #p3 li input[type="radio"] {
+    left: 40%;
+    width: 12px;
+    height: 12px;
+  }
+
+  #submitBtn {
+    left: 30%;
+    top: 60%;
+    width: clamp(80px, 25vw, 130px);
+    height: clamp(30px, 6vw, 35px);
+  }
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 770px) {
+  #p3 {
+    z-index: 0 !important;
+    width: 150%;
+    left: -30%;
+  }
+
+  #p3 .content {
+    font-size: 12px;
+    top: 20px;
+  }
+
+  #p3 ul {
+    left: 10%;
+  }
+   #p3 span {
+    font-size: 10px;
+  }
+  #p3 li p{
+    font-size: 8px;
+  }
+  #p3 li input[type="radio"] {
+    left: 35%;
+    width: clamp(8px, 4vw, 14px);
+    height: clamp(8px, 4vw, 14px);
+  }
+
+  #submitBtn {
+    /* left: 65% !important; */
+            top: 65%;
+    width: clamp(70px, 30vw, 120px);
+    height: clamp(25px, 6vw, 30px);
+    font-size: 0.9rem;
+  }
+
+  .story-pages-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  #p3 .content {
+    left: 3%;
+    margin-top: 25px;
+    font-size: 12px;
+    gap: 0px;
+  }
+
+  #p3 ul {
+    left: 20%;
+  }
+
+  #p3 {
+    height: 70vh;
+    background-color: white;
+  }
+
+  #p3 span {
+    left: 10%;
+  }
+
+  #p3 li input[type="radio"] {
+    left: 50%;
+    width: clamp(6px, 5vw, 12px);
+    height: clamp(6px, 5vw, 12px);
+  }
+
+  #submitBtn {
+    left: 40%;
+    top: 50%;
+    width: clamp(60px, 35vw, 100px);
+    height: clamp(20px, 5vw, 25px);
+    font-size: 0.8rem;
+  }
+}
+
+.skip-btn {
+  position: absolute;
+  right: 25%;
+  bottom: 33%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* مسافة بين الأيقونة والنص */
+  padding: 10px 16px;
+  background: transparent;
+  /* شفّاف افتراضي حتى يظهر الحدود */
+  border: 2px solid #6b6bff;
+  /* لون الحافة */
+  color: #2b2b7a;
+  /* لون النص */
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 999px;
+  /* شكل pill */
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  box-shadow: 0 6px 18px rgba(107, 107, 255, 0.12);
+  user-select: none;
+  background: linear-gradient(
+    180deg,
+    rgba(107, 107, 255, 0.06),
+    rgba(107, 107, 255, 0.02)
+  );
+}
+
+/* hover */
+.skip-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(107, 107, 255, 0.14);
+  background: linear-gradient(
+    180deg,
+    rgba(107, 107, 255, 0.1),
+    rgba(107, 107, 255, 0.02)
+  );
+}
+
+/* active (clicked) */
+.skip-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* focus (accessibility) */
+.skip-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(107, 107, 255, 0.12);
+}
+
+/* disabled */
+.skip-btn[disabled],
+.skip-btn.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border-color: #cfcffb;
+  color: #9a9adf;
+  background: transparent;
+}
+
+/* small icon-only variant */
+.skip-btn.icon-only {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  font-size: 0;
+  /* يخفي النص إن كان موجودًا */
+}
+
+/* SVG / icon sizing inside button */
+.skip-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* RTL support: if container has dir="rtl" */
+[dir="rtl"] .skip-btn {
+  direction: rtl;
+}
+
+.try-btn {
+  position: absolute;
+  left: -10%;
+  bottom: 33%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: transparent;
+  border: 2px solid #6b6bff;
+  color: #2b2b7a;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  box-shadow: 0 6px 18px rgba(107, 107, 255, 0.12);
+  user-select: none;
+  background: linear-gradient(
+    180deg,
+    rgba(107, 107, 255, 0.06),
+    rgba(107, 107, 255, 0.02)
+  );
+}
+
+.try-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(107, 107, 255, 0.14);
+  background: linear-gradient(
+    180deg,
+    rgba(107, 107, 255, 0.1),
+    rgba(107, 107, 255, 0.02)
+  );
+}
+
+.try-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.try-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(107, 107, 255, 0.12);
+}
+
+.try-btn[disabled],
+.try-btn.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border-color: #cfcffb;
+  color: #9a9adf;
+  background: transparent;
+}
+
+.try-btn.icon-only {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  font-size: 0;
+}
+
+.try-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: block;
+}
+
+[dir="ltr"] .skip-btn {
+  direction: ltr;
+}
+
+.answer-gif {
+  width: 30px;
+  /* حجم صغير لتناسب الدائرة */
+  height: 30px;
+  position: absolute;
+  /* وضع مطلق داخل الـ li */
+  top: 50%;
+  /* مركز عمودي */
+  left: 35%;
+  /* مركز أفقي */
+  transform: translate(-50%, -50%);
+  /* لضبط المنتصف تمامًا */
+  pointer-events: none;
+  /* لمنع التأثير على النقر */
+  z-index: 2;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skip-btn,
+  .try-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 850px) {
+  #p3 {
+    width: 100%;
+    justify-self: center;
+    left: -6%;
+  }
+
+
+  /* #p3 li {
+    font-size: 0.8rem;
+  } */
+}
+
+/* Small Tablets & Large Phones */
+@media (width: 540px) {
+  #p3 .content {
+    left: -2%;
+    margin-top: clamp(40px, 15vw, 54px);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #p3 ul {
+    left: 20%;
+  }
+
+  #p3 {
+    height: 80vh;
+    margin-top: 60px;
+    background-color: white;
+  }
+
+  #p3 span {
+    left: 10%;
+    font-size: 12px;
+  }
+  #p3 li p{
+    font-size: 10px;
+  }
+  #p3 li input[type="radio"] {
+    left: 50%;
+    width: clamp(6px, 5vw, 12px);
+    height: clamp(6px, 5vw, 12px);
+  }
+  #p3 li p {
+    width: 50%;
+  }
+  #submitBtn {
+    left: 40%;
+    top: 80%;
+    width: clamp(60px, 35vw, 100px);
+    height: clamp(20px, 5vw, 25px);
+    /* font-size: 0.8rem; */
+    font-size: 14px;
+  }
+
+  .story-pages-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skip-btn,
+  .try-btn {
+    max-width: 150px;
+  }
+
+  .skip-btn {
+    left: 80%;
+    bottom: 18%;
+    width: 60px;
+  }
+
+  .try-btn {
+    bottom: 17%;
+    left: 7%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  #p3 {
+    width: 100%;
+    margin-top: 30%;
+    border-radius: 0.75rem;
+  }
+
+  #p3 .content {
+    left: -3%;
+    font-size: 12px;
+  }
+
+  #p3 span {
+    font-size: 11px;
+    padding-left: 5px;
+  }
+  #p3 li p {
+    width: 60%;
+  }
+  #p3 ul {
+    padding-left: 15px;
+  }
+
+  #p3 li {
+    font-size: 10px;
+    padding: 3px 0;
+    padding-right: 35px;
+  }
+
+  #p3 li input[type="radio"] {
+    width: 12px;
+    height: 16px;
+    right: 5px;
+  }
+  #submitBtn {
+    width: 92px;
+    height: 27px;
+    font-size: 14px;
+    top: 83%;
+  }
+
+  .skip-btn,
+  .try-btn {
+    top: 78%;
+  }
+
+  .skip-btn {
+    left: 70%;
+    width: 22%;
+  }
+
+  .try-btn {
+    left: 3%;
+  }
+
+  .answer-gif {
+    width: 18px;
+    height: 18px;
+    right: 30px;
+  }
+}
+
+/* Very Small Phones */
+@media (max-width: 376px) {
+  #p3 .content {
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  #p3 li {
+    font-size: 10px;
+  }
+
+  #submitBtn {
+    width: 90px;
+    height: 30px;
+    font-size: 0.75rem;
+    top: 80%;
+  }
+}
+
+/* ==========================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ========================================== */
+/* @media (hover: none) and (pointer: coarse) {
+  #p3 li input[type="radio"] {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  #submitBtn,
+  .skip-btn,
+  .try-btn {
+    min-height: 44px;
+  }
+
+  #p3 li {
+    padding: 12px 0;
+    padding-right: 50px;
+  }
+} */
+
+/* Landscape mode on phones */
+/* @media (max-height: 500px) and (orientation: landscape) {
+  #p3 {
+    margin: 10px auto;
+  }
+
+  #p3 .content {
+    padding-top: 40px;
+  }
+
+  .story-pages-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+} */
